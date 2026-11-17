@@ -12,6 +12,7 @@ std::vector<DeviceStatus> PollAllDevices() {
     ctx.colls = EnumHid();
     PollGlorious(ctx);
     PollAula(ctx);       // before Kysona, which shares the 3554 vendor id and would probe it first
+    PollEvision(ctx);    // VGN / VXE / ATK Evision keyboards (VID 320F)
     PollAtkSerial(ctx);  // before Kysona, which shares the ATK vendor id
     PollKysona(ctx);
     PollKeychron(ctx);
