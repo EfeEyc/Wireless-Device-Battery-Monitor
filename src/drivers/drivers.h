@@ -45,6 +45,7 @@ bool GWolvesIsCable(USHORT pid);
 void PollGlorious(PollContext& ctx);  // also Hitscan
 void PollAula(PollContext& ctx);      // AULA F75 / F87 Pro / F99 wireless keyboards (before Kysona, same vendor id)
 void PollEvision(PollContext& ctx);   // VGN / VXE / ATK Evision keyboards (VID 320F: VXE V87, ATK V75X, ...)
+void PollWraith(PollContext& ctx);    // Wraith W1 wireless mouse (VID 093A: 522C / 622C)
 void PollAtkSerial(PollContext& ctx); // ATK N9 Pro headset (virtual COM port)
 void PollKeychron(PollContext& ctx);  // Keychron mice
 void PollLamzu(PollContext& ctx);     // LAMZU mice on vendor ids 373E / 37B0
